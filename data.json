@@ -1,0 +1,325 @@
+{
+    "quizzes": [
+        {
+            "title": "HTML",
+            "icon":"./assets/HTML-logo.svg",
+            "questions":[
+                {   "question": "HTML'in açılımı nedir?",
+                    "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
+                    "correctAnswer": "Hyper Text Markup Language"
+                },
+                {
+                    "question": "HTML'de bir resmi sayfaya eklemek için kullanılan etiket hangisidir?",
+                    "choices": ["<img>", "<pic>", "<image>", "<picture>"],
+                    "correctAnswer": "<img>"
+                },
+                {
+                    "question": "Bir metni kalın yapmak için kullanılan etiket hangisidir?",
+                    "choices": ["<bold>", "<b>", "<strong>", "<em>"],
+                    "correctAnswer": "<b>"
+                },
+                {
+                    "question": "HTML sayfasında bir bağlantı (link) oluşturmak için kullanılan etiket hangisidir?",
+                    "choices": ["<link>", "<a>", "<href>", "<url>"],
+                    "correctAnswer": "<a>"
+                },
+                {
+                    "question": "HTML5'de bir sayfanın başlığını belirlemek için kullanılan etiket hangisidir?",
+                    "choices": ["<title>", "<header>", "<h1>", "<head>"],
+                    "correctAnswer": "<title>"
+                },
+                {
+                    "question": "HTML'de bir liste oluşturmak için kullanılan etiketler nelerdir?",
+                    "choices": ["<list>, <li>", "<ol>, <ul>, <li>", "<ul>, <li>, <ol>", "<list>, <ul>"],
+                    "correctAnswer": "<ol>, <ul>, <li>"
+                },
+                {
+                    "question": "HTML'de bir sayfanın içeriğini tanımlayan ana etiket hangisidir?",
+                    "choices": ["<body>", "<content>", "<main>", "<section>"],
+                    "correctAnswer": "<body>"
+                },
+                {
+                    "question": "HTML'de bir paragraf oluşturmak için kullanılan etiket hangisidir?",
+                    "choices": ["<p>", "<paragraph>", "<para>", "<text>"],
+                    "correctAnswer": "<p>"
+                },
+                {
+                    "question": "HTML'de bir sayfa içinde başka bir sayfaya bağlantı yapmak için kullanılan etiket hangisidir?",
+                    "choices": ["<goto>", "<redirect>", "<link>", "<navigate>"],
+                    "correctAnswer": "<link>"
+                },
+                {
+                    "question": "HTML'de bir form oluşturmak için kullanılan etiket hangisidir?",
+                    "choices": ["<input>", "<form>", "<submit>", "<field>"],
+                    "correctAnswer": "<form>"
+                },
+                {
+                    "question": "HTML'de bir tablo oluşturmak için kullanılan etiket hangisidir?",
+                    "choices": ["<table>", "<grid>", "<tab>", "<tgrid>"],
+                    "correctAnswer": "<table>"
+                },
+                {
+                    "question": "HTML'de bir sayfa üzerinde metni yatay olarak ortalamak için kullanılan etiket hangisidir?",
+                    "choices": ["<center>", "<middle>", "<horizontal>", "<hcenter>"],
+                    "correctAnswer": "<center>"
+                },
+                {
+                    "question": "HTML'de bir resmin üzerine fare geldiğinde görünen metni belirlemek için kullanılan etiket hangisidir?",
+                    "choices": ["<alt>", "<hover>", "<caption>", "<title>"],
+                    "correctAnswer": "<title>"
+                },
+                {
+                    "question": "HTML'de bir sayfanın başına CSS dosyasını bağlamak için kullanılan etiket hangisidir?",
+                    "choices": ["<css>", "<style>", "<link>", "<script>"],
+                    "correctAnswer": "<link>"
+                },
+                {
+                    "question": "HTML'de bir sayfanın altındaki bilgileri belirlemek için kullanılan etiket hangisidir?",
+                    "choices": ["<footer>", "<bottom>", "<end>", "<tail>"],
+                    "correctAnswer": "<footer>"
+                }]
+        },
+        {
+            "title":"CSS",
+            "icon":"./assets/imgCSS-logo.svg",
+            "questions": [
+                {
+                    "question": "CSS'nin açılımı nedir?",
+                    "choices": ["Cascading Style Sheet", "Creative Style Sheet", "Computer Style Sheet", "Colorful Style Sheet"],
+                    "correctAnswer": "Cascading Style Sheet"
+                  },
+                  {
+                    "question": "Bir HTML elementine özel stil eklemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["style", "design", "class", "format"],
+                    "correctAnswer": "class"
+                  },
+                  {
+                    "question": "Bir metni italik yapmak için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["italic", "style:italic", "font-style:italic", "text-style:italic"],
+                    "correctAnswer": "font-style:italic"
+                  },
+                  {
+                    "question": "Bir div elementine kenar eklemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["border", "line", "outline", "edge"],
+                    "correctAnswer": "border"
+                  },
+                  {
+                    "question": "Bir sayfadaki tüm başlıkları aynı stilde biçimlendirmek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["header-style", "heading-format", "h1-h6", "font-heading"],
+                    "correctAnswer": "h1-h6"
+                  },
+                  {
+                    "question": "Bir elementin arka plan rengini belirlemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["background-color", "color-background", "bg-color", "back-color"],
+                    "correctAnswer": "background-color"
+                  },
+                  {
+                    "question": "Bir sayfadaki tüm metinleri yatay olarak ortalamak için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["text-align", "horizontal-align", "align-text", "text-position"],
+                    "correctAnswer": "text-align"
+                  },
+                  {
+                    "question": "Bir sayfadaki bir resmi diğer elementlerin üzerine getirmek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["z-index", "layer-index", "position", "float"],
+                    "correctAnswer": "z-index"
+                  },
+                  {
+                    "question": "Bir elementin boyutunu belirlemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["size", "dimension", "height-width", "width-height"],
+                    "correctAnswer": "width-height"
+                  },
+                  {
+                    "question": "Bir sayfadaki metni büyütmek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["font-size", "text-size", "size-font", "text-scale"],
+                    "correctAnswer": "font-size"
+                  },
+                  {
+                    "question": "Bir linkin ziyaret edildiğindeki rengini belirlemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["visited-color", "link-visited", "text-visited", "visited-link"],
+                    "correctAnswer": "visited-color"
+                  },
+                  {
+                    "question": "Bir elementin gölgesini belirlemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["box-shadow", "element-shadow", "shadow-style", "object-shadow"],
+                    "correctAnswer": "box-shadow"
+                  },
+                  {
+                    "question": "Bir sayfadaki metni altı çizili yapmak için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["underline", "text-decoration", "decoration-underline", "line-decoration"],
+                    "correctAnswer": "text-decoration"
+                  },
+                  {
+                    "question": "Bir sayfadaki bir elementi sağa veya sola kaydırmak için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["shift", "move", "float", "align"],
+                    "correctAnswer": "float"
+                  },
+                  {
+                    "question": "Bir elementin içeriğini diğer elementlerden gizlemek için kullanılan CSS özelliği hangisidir?",
+                    "choices": ["display: none", "visible: hidden", "opacity: 0", "hidden: true"],
+                    "correctAnswer": "visible: hidden"
+                  }]
+        },
+        {
+           "title": "JavaScript",
+           "icon": "./assets/JS-logo.svg",
+           "questions":[
+            {
+              "question": "JavaScript dilinde bir nesnenin prototipini değiştirmek için kullanılan yöntem hangisidir?",
+              "choices": ["prototypeOf()", "modifyPrototype()", "__proto__", "setPrototype()"],
+              "correctAnswer": "__proto__"
+            },
+            {
+              "question": "JavaScript dilinde bir değişkenin değerini kontrol etmek ve belirli bir duruma göre farklı işlemler yapmak için kullanılan ifade hangisidir?",
+              "choices": ["check", "evaluate", "verify", "if"],
+              "correctAnswer": "if"
+            },
+            {
+              "question": "Bir dizeyi tersine çevirmek için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["reverseString()", "flipString()", "stringReverse()", "invertString()"],
+              "correctAnswer": "reverseString()"
+            },
+            {
+              "question": "Bir sayının karesini almak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["power()", "square()", "Math.pow()", "sqrt()"],
+              "correctAnswer": "Math.pow()"
+            },
+            {
+              "question": "Bir diziye yeni bir öğe eklemek için kullanılan JavaScript yöntemi hangisidir?",
+              "choices": ["addTo()", "push()", "append()", "insert()"],
+              "correctAnswer": "push()"
+            },
+            {
+              "question": "Bir HTML elementine erişmek için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["selectElement()", "queryElement()", "document.querySelector()", "getById()"],
+              "correctAnswer": "document.querySelector()"
+            },
+            {
+              "question": "Bir sayıyı tam sayıya dönüştürmek için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["toInt()", "parseInt()", "convertInt()", "toInteger()"],
+              "correctAnswer": "parseInt()"
+            },
+            {
+              "question": "Bir dizeyi küçük harfe dönüştürmek için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["toLower()", "lowerCase()", "toLowerCase()", "convertToLower()"],
+              "correctAnswer": "toLowerCase()"
+            },
+            {
+              "question": "Bir JavaScript fonksiyonunu belirli bir süre sonra çalıştırmak için kullanılan yöntem hangisidir?",
+              "choices": ["setInterval()", "setTimeout()", "runAfter()", "delayFunction()"],
+              "correctAnswer": "setTimeout()"
+            },
+            {
+              "question": "Bir dizi içinde belirli bir öğenin indeksini bulmak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["findIndex()", "searchIndex()", "indexOf()", "locateIndex()"],
+              "correctAnswer": "indexOf()"
+            },
+            {
+              "question": "Bir sayıyı belirli bir ondalık basamağa yuvarlamak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["round()", "decimalRound()", "toFixed()", "roundTo()"],
+              "correctAnswer": "toFixed()"
+            },
+            {
+              "question": "Bir sayının mutlak değerini almak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["abs()", "absolute()", "Math.abs()", "absoluteValue()"],
+              "correctAnswer": "Math.abs()"
+            },
+            {
+              "question": "Bir dizeyi belirli bir karaktere göre bölmek için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["split()", "cut()", "divide()", "break()"],
+              "correctAnswer": "split()"
+            },
+            {
+              "question": "Bir sayının karekökünü almak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["sqrt()", "root()", "Math.sqrt()", "squareRoot()"],
+              "correctAnswer": "Math.sqrt()"
+            },
+            {
+              "question": "Bir sayının içindeki en büyük sayıyı bulmak için kullanılan JavaScript fonksiyonu hangisidir?",
+              "choices": ["max()", "maximum()", "Math.max()", "findMax()"],
+              "correctAnswer": "Math.max()"
+            }
+          ]
+        },
+        {
+            "title": "Accessebility",
+            "icon": "./assets/Accessebility-logo.svg",
+            "questions": [
+                {
+                    "question": "Erişilebilir bir web sayfasında kullanıcıların klavye kısayollarını kullanabilmesini sağlamak için hangi HTML özelliği kullanılır?",
+                    "choices": ["keyboard", "shortcuts", "accesskey", "hotkeys"],
+                    "correctAnswer": "accesskey"
+                  },
+                  {
+                    "question": "Ekranda görüntülenen bir resmin alternatif metnini belirlemek için hangi HTML özelliği kullanılır?",
+                    "choices": ["alt", "description", "image-text", "caption"],
+                    "correctAnswer": "alt"
+                  },
+                  {
+                    "question": "Web sayfasındaki bağlantıların açıklamalarını sağlamak ve ek bilgiler sunmak için hangi HTML etiketi kullanılır?",
+                    "choices": ["<desc>", "<linkdesc>", "<details>", "<figcaption>"],
+                    "correctAnswer": "<figcaption>"
+                  },
+                  {
+                    "question": "Bir sayfadaki metni büyütmek ve küçültmek için tarayıcıda genellikle hangi tuş kombinasyonu kullanılır?",
+                    "choices": ["Ctrl + \"+\"", "Ctrl + \"-\"", "Alt + \"=\"", "Alt + \"-\""],
+                    "correctAnswer": "Ctrl + \"+\""
+                  },
+                  {
+                    "question": "Erişilebilir bir form oluştururken, her bir form elemanına etiket atamak neden önemlidir?",
+                    "choices": ["SEO için", "JavaScript'le uyumluluk için", "Ekstra stillendirme seçenekleri için", "Ekran okuyucuları ve tarayıcı uyumluluğu için"],
+                    "correctAnswer": "Ekran okuyucuları ve tarayıcı uyumluluğu için"
+                  },
+                  {
+                    "question": "Bir sayfadaki düğmeler, bağlantılar ve formlar gibi etkileşimli öğelerin sıralı bir şekilde odaklanılmasını sağlamak için hangi HTML özelliği kullanılır?",
+                    "choices": ["tabindex", "focusorder", "sequence", "orderfocus"],
+                    "correctAnswer": "tabindex"
+                  },
+                  {
+                    "question": "Erişilebilir bir web sayfasında metin içindeki renkleri kullanırken nelere dikkat edilmelidir?",
+                    "choices": ["Yazı tipine", "Kontrasta", "Font boyutuna", "İtalik veya kalın kullanımına"],
+                    "correctAnswer": "Kontrasta"
+                  },
+                  {
+                    "question": "Bir sayfadaki bağlantıların hedefini belirlemek için hangi HTML özelliği kullanılır?",
+                    "choices": ["target", "linktarget", "href_target", "link_dest"],
+                    "correctAnswer": "target"
+                  },
+                  {
+                    "question": "Ekran okuyucular için sayfadaki başlıkları, paragrafları ve diğer yapıları anlamlı bir sırayla sıralamak için hangi HTML etiketi kullanılır?",
+                    "choices": ["<structure>", "<outline>", "<semantic>", "<heading>"],
+                    "correctAnswer": "<heading>"
+                  },
+                  {
+                    "question": "Sayfadaki bir resmin üzerine geldiğinde açıklama metnini görüntülemek için hangi HTML özelliği kullanılır?",
+                    "choices": ["tooltip", "description", "alt", "title"],
+                    "correctAnswer": "title"
+                  },
+                  {
+                    "question": "Bir sayfadaki metni sadece görsel olarak değil, aynı zamanda metinsel olarak deklare etmek için hangi CSS özelliği kullanılır?",
+                    "choices": ["text-hidden", "visuallyhidden", "hide-text", "text-display-none"],
+                    "correctAnswer": "visuallyhidden"
+                  },
+                  {
+                    "question": "Web sayfalarında renk kullanımının renk körlüğüne sahip kullanıcılar için daha erişilebilir olması için hangi tasarım prensipleri uygundur?",
+                    "choices": ["Monokromatik renk şemaları", "Dikatometik renk şemaları", "Triadik renk şemaları", "Analog renk şemaları"],
+                    "correctAnswer": "Monokromatik renk şemaları"
+                  },
+                  {
+                    "question": "Bir sayfadaki sesli içeriği kontrol etmek ve açıklamalar eklemek için kullanılan HTML etiketi hangisidir?",
+                    "choices": ["<sound>", "<audio>", "<voice>", "<caption>"],
+                    "correctAnswer": "<audio>"
+                  },
+                  {
+                    "question": "Sayfadaki bir form elemanının yanındaki hata mesajını göstermek için kullanılan HTML etiketi hangisidir?",
+                    "choices": ["<errormessage>", "<error>", "<errortext>", "<label>"],
+                    "correctAnswer": "<label>"
+                  },
+                  {
+                    "question": "Bir sayfadaki metin boyutunu artırmak ve küçültmek için kullanıcıya izin veren, erişilebilirlik açısından önemli bir araç hangisidir?",
+                    "choices": ["VoiceOver", "Screen Reader", "Zoom Text", "Magnifier"],
+                    "correctAnswer": "Zoom Text"
+                  }
+            ]
+        }
+    ]
+}
