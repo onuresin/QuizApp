@@ -2,7 +2,7 @@
     "quizzes": [
         {
             "title": "HTML",
-            "icon":"./assets/HTML-logo.svg",
+            "icon":"/images/HTML-logo.svg",
             "questions":[
                 {   "question": "HTML'in açılımı nedir?",
                     "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
@@ -81,7 +81,7 @@
         },
         {
             "title":"CSS",
-            "icon":"./assets/imgCSS-logo.svg",
+            "icon":"/images/imgCSS-logo.svg",
             "questions": [
                 {
                     "question": "CSS'nin açılımı nedir?",
@@ -161,7 +161,7 @@
         },
         {
            "title": "JavaScript",
-           "icon": "./assets/JS-logo.svg",
+           "icon": "/images/JS-logo.svg",
            "questions":[
             {
               "question": "JavaScript dilinde bir nesnenin prototipini değiştirmek için kullanılan yöntem hangisidir?",
@@ -242,7 +242,7 @@
         },
         {
             "title": "Accessebility",
-            "icon": "./assets/Accessebility-logo.svg",
+            "icon": "/images/Accessebility-logo.svg",
             "questions": [
                 {
                     "question": "Erişilebilir bir web sayfasında kullanıcıların klavye kısayollarını kullanabilmesini sağlamak için hangi HTML özelliği kullanılır?",
