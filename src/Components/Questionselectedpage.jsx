@@ -12,11 +12,13 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
     const [submitted, setSubmitted] = useState(false);
     const [mixQuestions, setMixQuestions] = useState([]);
     const [isSelectedAnswer, setIsSelectedAnswer] = useState(true);
-    const [options, setOptions] = useState ["A"];
+    const [options, setOptions] = useState("A");
     
-    useEffect (() => {
-        const shuffledQuestions = data.questions.sort(() => Math.random() - 0.5).slice(0,10);
+    useEffect(() => {
+      if (data.questions) {
+        const shuffledQuestions = data.questions.sort(() => Math.random() - 0.5).slice(0, 10);
         setMixQuestions(shuffledQuestions);
+      }
     }, []);
 
     const handleAnswer = (answer) => {
@@ -25,7 +27,7 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
     
     const handleSubmit = () => {
         if(userAnswer === null) return setIsSelectedAnswer(false);
-        if(userAnswer === currentQuiz.quesitons[currentQuestion].answer) {
+        if(userAnswer === currentQuiz.questions[currentQuestion].answer) {
             setScore(score + 1);
         }
         setIsSelectedAnswer(true);
@@ -81,7 +83,7 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
                         <p className="answerBtn">Sırada ki soru</p>
                       </button>
                     )}
-                    {!isSelectAnswer && <p className="errorText">Lütfen bir cevap seçiniz</p>}
+                    {!isSelectedAnswer && <p className="errorText">Lütfen bir cevap seçiniz</p>}
                   </div>
                 </div>
               </div>

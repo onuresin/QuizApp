@@ -7,10 +7,11 @@ export default function Quiz() {
     const [currentQuiz, setCurrentQuiz] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [userAnswer, setUserAnswer] = useState(null);
+    const [score, setScore] = useState[0];
 
-    const handleAnswer = (answer) => {
-        setUserAnswer(answer);
-        if (answer === data.quizzes[currentQuiz].questions[currentQuestion].answer) {
+    const handleAnswer = (correctAnswer) => {
+        setUserAnswer(correctAnswer);
+        if (correctAnswer === data.quizzes[currentQuiz].questions[currentQuestion].answer) {
             setScore(score + 1);
         }
     };

@@ -2,11 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import Header from './Components/Header';
 import QuestionSelectedPage from './Components/Questionselectedpage';
-import TopicSelection from './Components/Topicselection';
-import QuizResult from './Components/QuizResult';
+import data from '/data.json';
+
+
 
 function App() {
-  const [currentQuiz, setCurrentQuiz] = useState([]);;
+  const [currentQuiz, setCurrentQuiz] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [gameOver, setGameOver] = useState(false);
 
@@ -27,8 +28,10 @@ function App() {
                 <p>Başlamak için bir kategori seçiniz.</p>
               </div>
               <div className="topicSelection">
-                  {data.quizzes.map((quiz,index) => 
-                  <label><button onClick={e => handleQuestionPage(quiz)} key={index}><img src={quiz.icon}/><p>{quiz.title}</p></button></label>)}
+              {data.quizzes.map((quiz, index) => (
+                <label key={index}><button onClick={e => handleQuestionPage(quiz)}>
+                  <img src={quiz.icon} alt={quiz.title}/><p>{quiz.title}</p></button>
+                </label>))}
               </div>
             </div>
         </div>

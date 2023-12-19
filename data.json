@@ -81,7 +81,7 @@
         },
         {
             "title":"CSS",
-            "icon":"/images/imgCSS-logo.svg",
+            "icon":"/images/CSS-logo.svg",
             "questions": [
                 {
                     "question": "CSS'nin açılımı nedir?",

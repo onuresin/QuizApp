@@ -1,7 +1,7 @@
 import Header from './Header';
 import data from'/data.json';
 
-export default function QuizResult() {
+export default function QuizResult({currentQuiz, score}) {
     return (
         <>
             <div className="container">

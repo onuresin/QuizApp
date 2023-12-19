@@ -10,29 +10,15 @@
     --Purple: #A729F5;
     --Pure-White: #FFF;
 }
-
 body {
-    background-color: #313E51;
+    background: var(--Light-Grey, #F4F6FA);
+    font-family: 'Rubik', sans-serif;
 }
 a {
     text-decoration: none;
 }
-  
-body {
-    background: var(--Light-Grey, #F4F6FA);
-    font-family: 'Rubik', sans-serif;
-  
-}
-  
-  
 .container {
     margin: 64px auto;
     width: 1160px;
     
-}
-.welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 100px;
 }
