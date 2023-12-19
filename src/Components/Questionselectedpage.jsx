@@ -1,6 +1,8 @@
 import Header from "./Header"
 import React, { useState,useEffect } from "react"
 import data from '/data.json';
+import QuizResult from "./QuizResult";
+
 
 // []  ()
 
@@ -8,13 +10,13 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
     const [userAnswer, setUserAnswer] = useState(null);
     const [score, setScore] = useState(0);
     const [submitted, setSubmitted] = useState(false);
-    const [questions, setQuestions] = useState([]);
-    const [isSelectedAnswer, setisSelectedAnswer] = useState(true);
+    const [mixQuestions, setMixQuestions] = useState([]);
+    const [isSelectedAnswer, setIsSelectedAnswer] = useState(true);
     const [options, setOptions] = useState ["A"];
     
     useEffect (() => {
         const shuffledQuestions = data.questions.sort(() => Math.random() - 0.5).slice(0,10);
-        setQuestions(shuffledQuestions);
+        setMixQuestions(shuffledQuestions);
     }, []);
 
     const handleAnswer = (answer) => {
@@ -22,15 +24,15 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
     };
     
     const handleSubmit = () => {
-        if(userAnswer === null) return setisSelectedAnswer(false);
-        if(userAnswer === quesitons[currentQuestion].answer) {
+        if(userAnswer === null) return setIsSelectedAnswer(false);
+        if(userAnswer === currentQuiz.quesitons[currentQuestion].answer) {
             setScore(score + 1);
         }
-        setisSelectedAnsweb(true);
+        setIsSelectedAnswer(true);
         setSubmitted(true);
     };
     const nextQuestion = () => {
-        if (currentQuestion < questions.length - 1) {
+        if (currentQuestion < currentQuiz.questions.length - 1) {
           setCurrentQuestion(currentQuestion + 1);
         }
         setUserAnswer(null);
@@ -54,14 +56,14 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
                   <div className="questions">
                     <div className="questionsText">
                       <p>Soru {currentQuestion + 1} 10</p>
-                      <h2>{questions[currentQuestion].question}</h2>
+                      <h2>{currentQuiz.questions[currentQuestion].question}</h2>
                     </div>
                     <div className="progressbarContainer">
                       <div className="progressbar" style={{ width: `${(currentQuestion + 1) / 10 * 100}%` }}></div>
                     </div>
                   </div>
                   <div className="answers">
-                    {questions[currentQuestion].options.map((answer, index) => (
+                    {currentQuiz.questions[currentQuestion].choices.map((answer, index) => (
                       <div className="answer" key={index}>
                         <button onClick={() => handleAnswer(answer)}>
                           {index === 0 && ("A") || index === 1 && ("B") || index === 2 && ("C") || index === 3 && ("D")}

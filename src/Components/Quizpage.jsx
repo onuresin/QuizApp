@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import '.data.json'
+import data from'/data.json';
 // () []
+
+
 export default function Quiz() {
     const [currentQuiz, setCurrentQuiz] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(0);
