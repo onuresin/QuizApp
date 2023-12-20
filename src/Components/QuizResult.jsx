@@ -1,6 +1,7 @@
 import Header from './Header';
 import data from'/data.json';
 
+
 export default function QuizResult({currentQuiz, score}) {
     return (
         <>
@@ -22,13 +23,17 @@ export default function QuizResult({currentQuiz, score}) {
                     <div className="score-section">
                         <div className="section-inner">
                             <div className="inner-details">
-                                <img src={currentQuiz.icon} alt={currentQuiz.title}/>
-                                <p className='topic'>{currentQuiz.title}</p>
-                                <p>10 üzerinden</p>
-                                <span>{score}</span>
+                                <span className='details-top'>
+                                    <img src={currentQuiz.icon} alt={currentQuiz.title}/>
+                                    <p className='topic'>{currentQuiz.title}</p>
+                                </span>
+                                <span className='details-bot'>
+                                    <p>10 üzerinden</p>
+                                    <span>{score}</span>
+                                </span>
                             </div>
-                            <div className='play-again'>
-                                <button><p>Tekrar Oyna</p></button>
+                            <div className="play-again">
+                                <button><a href="Welcomepage.jsx">Tekrar Oyna</a></button>
                             </div>
                         </div>
                     </div>

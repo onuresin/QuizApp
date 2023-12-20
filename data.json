@@ -15,7 +15,7 @@
                 },
                 {
                     "question": "Bir metni kalın yapmak için kullanılan etiket hangisidir?",
-                    "choices": ["<bold>", "<b>", "<strong>", "<em>"],
+                    "choices": ["<bold>", "<b>", "<p>", "<em>"],
                     "correctAnswer": "<b>"
                 },
                 {
