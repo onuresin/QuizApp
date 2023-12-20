@@ -3,7 +3,7 @@ export default function WelcomePage () {
         <div className="welcome">
             <h2 className="wel">Hoşgeldiniz!</h2>
             <h2 className="quizz">FrontEnd Sınavı</h2>
-            <p>Başlamak için bir kategori seçiniz.</p>
+            <p className="word">Başlamak için bir kategori seçiniz.</p>
         </div>
     )
 }
