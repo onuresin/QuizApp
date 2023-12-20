@@ -4,7 +4,7 @@ import data from'/data.json';
 export default function QuizResult({currentQuiz, score}) {
     return (
         <>
-            <div className="container">
+            <div className="container-qr">
                 <div className="header-topic">
                     <div className="topic-title">
                         <img src={currentQuiz.icon} alt={currentQuiz.title} />

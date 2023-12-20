@@ -40,11 +40,22 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
         setUserAnswer(null);
         setSubmitted(false);
       };
+    // const answerButtonStyle = (index) => {
+    //   const correctAnswer = currentQuiz.questions[currentQuestion].answer;
+    //   const isCorrect = currentQuiz.questions[currentQuestion].choices[index] === correctAnswer;
+    //   const correctColor = '#26D782';
+    //   const wrongColor = '#EE5454';
+    //   const defaultColor = '#A729F5';
+
+    //   const answerColor = submitted ? (isCorrect ? correctColor : wrongColor) : defaultColor;
+
+    //   return {backgroundColor: answerColor};
+    // };
       return (
         <>
           {currentQuestion <= 9 ? (
             <>
-              <div className="container">
+              <div className="container-qsp">
                 <div className="questionHeader">
                   <div className="questionTitle">
                     <img src={currentQuiz.icon} alt="Accessibility Icon" />
@@ -57,7 +68,7 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
                 <div className="questionSection">
                   <div className="questions">
                     <div className="questionsText">
-                      <p>Soru {currentQuestion + 1} 10</p>
+                      <p>Soru {currentQuestion + 1} /10</p>
                       <h2>{currentQuiz.questions[currentQuestion].question}</h2>
                     </div>
                     <div className="progressbarContainer">
@@ -68,7 +79,9 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
                     {currentQuiz.questions[currentQuestion].choices.map((answer, index) => (
                       <div className="answer" key={index}>
                         <button onClick={() => handleAnswer(answer)}>
-                          {index === 0 && ("A") || index === 1 && ("B") || index === 2 && ("C") || index === 3 && ("D")}
+                        <span className={`answerOptions ${index === 0 ? 'A' : index === 1 ? 'B' : index === 2 ? 'C' : 'D'}`}>
+                            {index === 0 && ('A') || index === 1 && ('B') || index === 2 && ('C') || index === 3 && ('D')}
+                        </span>
                           {' '}
                           <p>{answer}</p>
                         </button>
@@ -83,7 +96,7 @@ export default function QuestionSelectedPage({currentQuiz, setCurrentQuiz, curre
                         <p className="answerBtn">Sırada ki soru</p>
                       </button>
                     )}
-                    {!isSelectedAnswer && <p className="errorText">Lütfen bir cevap seçiniz</p>}
+                    {!isSelectedAnswer && <p className="errorText"><img src="images/error-cross.svg" alt="" />Lütfen bir cevap seçiniz</p>}
                   </div>
                 </div>
               </div>
