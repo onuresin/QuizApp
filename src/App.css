@@ -175,6 +175,10 @@ a {
     background-color: #FFF;
     height: 64px;
 }
+.answerOptions {
+    background-color: var(--Light-Grey);
+    padding: 11px 13px 11px 11px;
+}
 .answerOptions.correct {
     border: 2px solid var(--Green);
     background-color: var(--Green);
@@ -192,16 +196,17 @@ a {
   } 
 .spanSlice {
     display: flex;
+    align-items: center;
     gap: 16px;
     color: var(--Grey-Navy);
     font-size: 18px;
     font-weight: 500;
     line-height: 100%;
-    & p {
-        font-size: 18px;
-        color: var(--Dark-Navy);
-        font-weight: 500;
-    }
+}
+.spanAnswer {
+    font-size: 18px;
+    color: var(--Dark-Navy);
+    font-weight: 500;
 }
 .answerBtn, .submitAnswer {
     background-color: var(--Purple);
@@ -217,8 +222,11 @@ a {
     }
 
 }
+.answerBtn:hover, .submitAnswer:hover {
+   background-color: #d394fa;
+}
 .trueIcon, .crossIcon {
-    width: 24px;
+    width: 32px;
 }
 .activeBorder {
     border: 2px solid var(--Purple);

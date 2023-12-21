@@ -1,5 +1,5 @@
 import Header from "./Header";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import data from '/data.json';
 import QuizResult from "./QuizResult";
 
@@ -23,7 +23,7 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
     }
     setIsSelectedAnswer(true);
     setSubmitted(true);
-    
+    setActiveBorderIndex(-1);
   };
 
   const nextQuestion = () => {
@@ -79,7 +79,7 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
                         {index === 0 && ('A') || index === 1 && ('B') || index === 2 && ('C') || index === 3 && ('D')}
                       </span>
                       {' '}
-                      <p>{answer}</p>
+                      <span className="spanAnswer"><p>{answer}</p></span>
                     </span>
                     {submitted && userAnswer === answer && (
                       <>
