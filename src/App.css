@@ -35,7 +35,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: end;
+    gap: 16px;
 }
+.switchSide {
+    background-color: var(--Purple);
+    width: auto;
+    padding: 4px;
+    border-radius: 999px;
+    cursor: pointer;
+    & input {
+        visibility: hidden;
+    }
+    & label {
+        background-image: url(images/circle-switch.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        &:has(:checked) {
+            background-image: url(images/circle-switch.svg);
+        }
+    }
+}
+
 /* inner */
 .inner {
     padding: 32px 24px;
@@ -253,7 +273,6 @@ a {
     display: flex;
     flex-direction: column;
     width: 375px;
-    background-image: url(images/mobile-bg.svg);
     background-repeat: no-repeat;
     margin: 0 auto;
     height: 812px;
