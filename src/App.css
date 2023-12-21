@@ -13,6 +13,12 @@
     --Green: #26D782;
     --Red: #EE5454;
 }
+.dark-theme {
+    --Light-Grey: #313E51;
+    --Dark-Navy: #F4F6FA;
+    --Pure-White: #3B4D66;
+}
+
 body {
     background: var(--Light-Grey, #F4F6FA);
     font-family: 'Rubik', sans-serif;
@@ -382,5 +388,275 @@ a {
         color: #fff;
      }
 
+}
+
+/* responsive tasarımlar*/
+
+@media (767px <= width <= 1439px) {
+    .welcome-sec, .container-qsp, .container-qr {
+        width: 768px;
+        background-image: url(images/tablet-bg.svg);
+        background-repeat: no-repeat;
+    }
+    .inner{
+        margin: 0 auto;
+        width: 768px;
+        padding-inline: 64px;
+    }
+    .welcome {
+        & .wel {
+            font-size: 64px;
+            font-weight: 300;
+        }
+        & .quizz {
+            font-size: 64px;
+        }
+        & .word {
+            font-size: 20px;
+        }
+    }
+    .topicSelection {
+        gap: 24px;
+        & label button {
+            width: 640px;
+            & p {
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+    .container-qsp, .container-qr {
+        padding: 40px 64px 54px 64px;
+    }
+    .questionSection {
+       gap: 64px;
+       & .questions {
+        & .questionsText{
+            gap: 27px;
+            & p {
+                font-size: 20px;
+            }
+            & h2 {
+                font-size: 36px;
+            }
+        }
+       }
+    }
+    .answers {
+        width: 640px;
+        gap: 24px;
+    }
+    .answer button {
+        width: 640px;
+    }
+    .spanSlice {
+        gap: 32px;
+        & .answerOptions {
+            width: 56px;
+            height: 56px;
+            padding: 18px 15px;
+            font-size: 28px;
+        }
+        & .spanAnswer {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    .container-qr {
+        gap: 27px;
+    }
+    .header-topic {
+        & .topic-title {
+            gap: 24px;
+            & img {
+                width: 56px;
+            }
+            & p {
+              font-size: 28px;  
+            }
+        }
+    }
+    .quiz-end-container {
+        gap: 64px;
+    }
+    .quiz-complete {
+        & .quiz-result-word {
+            font-size: 64px;
+        }
+        & .quiz-score {
+            font-size: 64px;
+        }
+    }
+    .inner-details {
+        width: 640px;
+        padding: 48px;
+        gap: 40px;
+        & .details-top {
+            gap: 24px;
+            & img {
+                width: 64px;
+            }
+            & .topic {
+                font-size: 28px; 
+            }
+        }
+        & .details-bot {
+            & p {
+               font-size: 24px; 
+            }
+            & span {
+                font-size:144px;
+            }
+        }
+    }
+    .play-again button {
+        width: 640px;
+        padding: 32px;
+        font-size: 28px;
+    }
+}
+@media (min-width: 1440px) {
+    .welcome-sec{
+        width: 1440px;
+        background-image: url(images/pc-bg.svg);
+        background-repeat: no-repeat;
+    }
+    .inner{
+        margin: 0 auto;
+        width: 1160px;
+        flex-direction: row;
+        gap: 140px;
+    }
+    .topicSelection {
+        margin: 0;
+    }
+    .welcome {
+        & .wel {
+            font-size: 64px;
+            font-weight: 300; 
+        }
+        & .quizz {
+            font-size: 64px;
+        }
+        & .word {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .topicSelection {
+        gap: 24px;
+        & label button {
+            width: 524px;
+            & img {
+                width: 56px;
+            }
+            & p {
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+    }
+    .container-qsp, .container-qr {
+        width: 1440px;
+        margin: 0 auto;
+        background-image: url(images/pc-bg.svg);
+        background-repeat: no-repeat;
+    }
+    .questionHeader, .questionSection {
+        padding-inline: 120px;
+        & .questionTitle {
+            & img {
+                width: 56px;
+            }
+            & p {
+                font-size: 28px; 
+            }
+        }
+    }
+    .questionSection {
+        flex-direction: row;
+        gap: 131px;
+        & .questions {
+            & .questionsText {
+                & p {
+                   font-size: 20px; 
+                }
+                & h2 {
+                    font-size: 36px; 
+                }
+            }
+        }
+    }
+    .answers {
+        width: 520px;
+        gap: 24px;
+    }
+    .answer {
+        & button {
+            width: 520px;
+        }
+        & .spanSlice {
+            gap: 32px;
+            & .answerOptions {
+                width: 52px;
+                border-radius: 8px;
+            }
+            & .spanAnswer {
+                & p {
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+    }
+    .header-topic, .quiz-end-container {
+        padding-inline: 120px;
+        & .topic-title {
+            gap: 24px;
+            & img {
+                width: 52px;
+            }
+            & p {
+                font-size: 28px;
+            }
+        }
+    }
+    .quiz-end-container {
+        flex-direction: row;
+        justify-content: space-between;
+        & .quiz-complete {
+            & h4 {
+                font-size: 64px;
+            }
+        }
+    }
+    .inner-details {
+        gap: 40px;
+        width: 468px;
+        padding: 36px;
+        & .details-top {
+            & img {
+                width: 52px;
+            }
+            & p {
+                font-size: 28px;
+            }
+        }
+        & .details-bot {
+            & p {
+                font-size: 24px; 
+            }
+            & span {
+                font-size: 144px;
+            }
+        }
+    }
+    .play-again button {
+        width: 468px;
+        padding: 32px ;
+        font-size: 28px;
+        font-weight: 600;
+    }
 }
 
