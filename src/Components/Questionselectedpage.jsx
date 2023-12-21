@@ -7,12 +7,9 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
   const [userAnswer, setUserAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [submitted, setSubmitted] = useState(false);
-  const [mixQuestions, setMixQuestions] = useState([]);
   const [isSelectedAnswer, setIsSelectedAnswer] = useState(true);
   const correctAnswer = currentQuiz.questions[currentQuestion].correctAnswer;
   const [activeBorderIndex, setActiveBorderIndex] = useState(-1) // border işaretlediğimizde kenarları renklensin diye eklediğimiz değişken
-
-
 
   const handleAnswer = (answer) => {
     setUserAnswer(answer);
@@ -26,6 +23,7 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
     }
     setIsSelectedAnswer(true);
     setSubmitted(true);
+    
   };
 
   const nextQuestion = () => {
@@ -69,9 +67,11 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
                   <button
                      onClick={() => {
                       handleAnswer(answer);
-                      setActiveBorderIndex(index); // <-- setBorderActive burada çağrılmalı
+                      setActiveBorderIndex(index);          }}
+                    style={{
+                      ...disableOptions,
+                      border: index === activeBorderIndex ? '2px solid #A729F5' : 'none',
                     }}
-                    style={disableOptions}
                   >
                     <span className="spanSlice">
                       <span className={`answerOptions ${index === 0 ? 'A' : index === 1 ? 'B' : index === 2 ? 'C' : 'D'} ${submitted && userAnswer === answer ? 
