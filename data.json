@@ -4,79 +4,154 @@
             "title": "HTML",
             "icon":"/images/HTML-logo.svg",
             "questions":[
-                {   "question": "HTML'in açılımı nedir?",
+                {   "number":1,
+                    "question": "HTML'in açılımı nedir?",
                     "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
                     "correctAnswer": "Hyper Text Markup Language"
                 },
                 {
+                    "number":2,
                     "question": "HTML'de bir resmi sayfaya eklemek için kullanılan etiket hangisidir?",
                     "choices": ["<img>", "<pic>", "<image>", "<picture>"],
                     "correctAnswer": "<img>"
                 },
                 {
+                    "number":3,
                     "question": "Bir metni kalın yapmak için kullanılan etiket hangisidir?",
                     "choices": ["<bold>", "<b>", "<p>", "<em>"],
                     "correctAnswer": "<b>"
                 },
                 {
+                    "number":4,
                     "question": "HTML sayfasında bir bağlantı (link) oluşturmak için kullanılan etiket hangisidir?",
                     "choices": ["<link>", "<a>", "<href>", "<url>"],
                     "correctAnswer": "<a>"
                 },
                 {
+                    "number":5,
                     "question": "HTML5'de bir sayfanın başlığını belirlemek için kullanılan etiket hangisidir?",
                     "choices": ["<title>", "<header>", "<h1>", "<head>"],
                     "correctAnswer": "<title>"
                 },
                 {
+                    "number":6,
                     "question": "HTML'de bir liste oluşturmak için kullanılan etiketler nelerdir?",
                     "choices": ["<list>, <li>", "<ol>, <ul>, <li>", "<ul>, <li>, <ol>", "<list>, <ul>"],
                     "correctAnswer": "<ol>, <ul>, <li>"
                 },
                 {
+                    "number":7,
                     "question": "HTML'de bir sayfanın içeriğini tanımlayan ana etiket hangisidir?",
                     "choices": ["<body>", "<content>", "<main>", "<section>"],
                     "correctAnswer": "<body>"
                 },
                 {
+                    "number":8,
                     "question": "HTML'de bir paragraf oluşturmak için kullanılan etiket hangisidir?",
                     "choices": ["<p>", "<paragraph>", "<para>", "<text>"],
                     "correctAnswer": "<p>"
                 },
                 {
+                    "number":9,
                     "question": "HTML'de bir sayfa içinde başka bir sayfaya bağlantı yapmak için kullanılan etiket hangisidir?",
                     "choices": ["<goto>", "<redirect>", "<link>", "<navigate>"],
                     "correctAnswer": "<link>"
                 },
                 {
+                    "number":10,
                     "question": "HTML'de bir form oluşturmak için kullanılan etiket hangisidir?",
                     "choices": ["<input>", "<form>", "<submit>", "<field>"],
                     "correctAnswer": "<form>"
                 },
                 {
-                    "question": "HTML'de bir tablo oluşturmak için kullanılan etiket hangisidir?",
-                    "choices": ["<table>", "<grid>", "<tab>", "<tgrid>"],
-                    "correctAnswer": "<table>"
+                  "number":11,  
+                  "question": "HTML'de bir tablo oluşturmak için kullanılan etiket hangisidir?",
+                  "choices": ["<table>", "<grid>", "<tab>", "<tgrid>"],
+                  "correctAnswer": "<table>"
                 },
                 {
-                    "question": "HTML'de bir sayfa üzerinde metni yatay olarak ortalamak için kullanılan etiket hangisidir?",
-                    "choices": ["<center>", "<middle>", "<horizontal>", "<hcenter>"],
-                    "correctAnswer": "<center>"
+                  "number":12,
+                  "question": "HTML'de bir sayfa üzerinde metni yatay olarak ortalamak için kullanılan etiket hangisidir?",
+                  "choices": ["<center>", "<middle>", "<horizontal>", "<hcenter>"],
+                  "correctAnswer": "<center>"
                 },
                 {
-                    "question": "HTML'de bir resmin üzerine fare geldiğinde görünen metni belirlemek için kullanılan etiket hangisidir?",
+                  "number":13,
+                  "question": "HTML'de bir resmin üzerine fare geldiğinde görünen metni belirlemek için kullanılan etiket hangisidir?",
                     "choices": ["<alt>", "<hover>", "<caption>", "<title>"],
                     "correctAnswer": "<title>"
                 },
                 {
-                    "question": "HTML'de bir sayfanın başına CSS dosyasını bağlamak için kullanılan etiket hangisidir?",
+                  "number":14,
+                  "question": "HTML'de bir sayfanın başına CSS dosyasını bağlamak için kullanılan etiket hangisidir?",
                     "choices": ["<css>", "<style>", "<link>", "<script>"],
                     "correctAnswer": "<link>"
                 },
                 {
-                    "question": "HTML'de bir sayfanın altındaki bilgileri belirlemek için kullanılan etiket hangisidir?",
+                  "number":15,
+                  "question": "HTML'de bir sayfanın altındaki bilgileri belirlemek için kullanılan etiket hangisidir?",
                     "choices": ["<footer>", "<bottom>", "<end>", "<tail>"],
                     "correctAnswer": "<footer>"
+                },
+                {
+                  "number": 16,
+                  "question": "HTML'de bir resmin alternatif metni (alt text) eklemek için kullanılan özellik hangisidir?",
+                  "choices": ["<alt>", "<description>", "<caption>", "<image-alt>"],
+                  "correctAnswer": "<alt>"
+                },
+                {
+                  "number": 17,
+                  "question": "HTML'de bir sayfa üzerindeki metni vurgulamak için kullanılan etiket hangisidir?",
+                  "choices": ["<highlight>", "<bold>", "<emphasize>", "<strong>"],
+                  "correctAnswer": "<strong>"
+                },
+                {
+                  "number": 18,
+                  "question": "HTML5'de bir sayfada video eklemek için kullanılan etiket hangisidir?",
+                  "choices": ["<video>", "<media>", "<movie>", "<play>"],
+                  "correctAnswer": "<video>"
+                },
+                {
+                  "number": 19,
+                  "question": "HTML'de bir sayfa üzerinde ses eklemek için kullanılan etiket hangisidir?",
+                  "choices": ["<audio>", "<sound>", "<music>", "<play>"],
+                  "correctAnswer": "<audio>"
+                },
+                {
+                  "number": 20,
+                  "question": "HTML'de bir sayfanın karakter setini belirlemek için kullanılan etiket hangisidir?",
+                  "choices": ["<charset>", "<encoding>", "<meta>", "<character-set>"],
+                  "correctAnswer": "<meta>"
+                },
+                {
+                  "number": 21,
+                  "question": "HTML'de bir sayfanın dilini belirlemek için kullanılan etiket hangisidir?",
+                  "choices": ["<language>", "<locale>", "<lang>", "<html-lang>"],
+                  "correctAnswer": "<html lang>"
+                },
+                {
+                  "number": 22,
+                  "question": "HTML'de bir sayfada kullanılan CSS dosyasını dahil etmek için kullanılan etiket hangisidir?",
+                  "choices": ["<style>", "<css>", "<design>", "<skin>"],
+                  "correctAnswer": "<style>"
+                },
+                {
+                  "number": 23,
+                  "question": "HTML'de bir sayfa üzerindeki bir resmin boyutunu belirlemek için kullanılan özellik hangisidir?",
+                  "choices": ["<size>", "<width-height>", "<dimensions>", "<width>"],
+                  "correctAnswer": "<width>"
+                },
+                {
+                  "number": 24,
+                  "question": "HTML'de bir sayfa üzerinde yatay çizgi eklemek için kullanılan etiket hangisidir?",
+                  "choices": ["<line>", "<hr>", "<horizontal-rule>", "<line-break>"],
+                  "correctAnswer": "<hr>"
+                },
+                {
+                  "number": 25,
+                  "question": "HTML'de bir sayfanın arka plan rengini belirlemek için kullanılan özellik hangisidir?",
+                  "choices": ["<bg-color>", "<background-color>", "<color>", "<page-color>"],
+                  "correctAnswer": "<background-color>"
                 }]
         },
         {

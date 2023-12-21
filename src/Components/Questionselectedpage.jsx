@@ -10,16 +10,13 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
   const [mixQuestions, setMixQuestions] = useState([]);
   const [isSelectedAnswer, setIsSelectedAnswer] = useState(true);
   const correctAnswer = currentQuiz.questions[currentQuestion].correctAnswer;
+  const [activeBorderIndex, setActiveBorderIndex] = useState(-1) // border işaretlediğimizde kenarları renklensin diye eklediğimiz değişken
 
-  useEffect(() => {
-    if (data.questions) {
-      const shuffledQuestions = data.questions.sort(() => Math.random() - 0.5).slice(0, 10);
-      setMixQuestions(shuffledQuestions);
-    }
-  }, []);
+
 
   const handleAnswer = (answer) => {
     setUserAnswer(answer);
+    setActiveBorderIndex(-1);
   };
 
   const handleSubmit = () => {
@@ -37,6 +34,7 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
     }
     setUserAnswer(null);
     setSubmitted(false);
+    setActiveBorderIndex(-1);
   };
 
   const disableOptions = submitted ? { pointerEvents: 'none' } : {};
@@ -69,11 +67,15 @@ export default function QuestionSelectedPage({ currentQuiz, setCurrentQuiz, curr
                 {currentQuiz.questions[currentQuestion].choices.map((answer, index) => (
                 <div className="answer" key={index}>
                   <button
-                    onClick={() => handleAnswer(answer)} style={disableOptions}>
+                     onClick={() => {
+                      handleAnswer(answer);
+                      setActiveBorderIndex(index); // <-- setBorderActive burada çağrılmalı
+                    }}
+                    style={disableOptions}
+                  >
                     <span className="spanSlice">
-                      <span
-                        className={`answerOptions ${index === 0 ? 'A' : index === 1 ? 'B' : index === 2 ? 'C' : 'D'} ${submitted && userAnswer === answer ? (userAnswer === correctAnswer ? 'correct' : 'incorrect') : ''}`}
-                      >
+                      <span className={`answerOptions ${index === 0 ? 'A' : index === 1 ? 'B' : index === 2 ? 'C' : 'D'} ${submitted && userAnswer === answer ? 
+                        (userAnswer === correctAnswer ? 'correct' : 'incorrect') : ''} ${index === activeBorderIndex ? 'activeBorder' : ''}`}>
                         {index === 0 && ('A') || index === 1 && ('B') || index === 2 && ('C') || index === 3 && ('D')}
                       </span>
                       {' '}

@@ -175,23 +175,21 @@ a {
     background-color: #FFF;
     height: 64px;
 }
-/* .answerOptions.correct {
+.answerOptions.correct {
     border: 2px solid var(--Green);
     background-color: var(--Green);
-    border-radius: 8px;
+    border-radius: 2px;
     color: #FFF;
     box-sizing: border-box;
-    padding: 11px;
   }
   
   .answerOptions.incorrect {
     border: 1px solid var(--Red);
     background-color: var(--Red);
-    border-radius: 5px;
-    padding: 11px;
+    border-radius: 2px;
     color: #FFF;
     box-sizing: border-box;
-  } */
+  } 
 .spanSlice {
     display: flex;
     gap: 16px;
@@ -221,6 +219,12 @@ a {
 }
 .trueIcon, .crossIcon {
     width: 32px;
+}
+.activeBorder {
+    border: 2px solid var(--Purple);
+    background-color: var(--Purple);
+    color: white;
+    border-radius: 2px;
 }
 .errorText {
     text-align: center;
